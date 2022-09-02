@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    height: 100vh;
+    background: #4a7d70;
+    background-image: linear-gradient(90deg, #440154, #482475, #414487, #355f8d, #2a788e, #21908d, #22a884, #42be71, #7ad151, #bddf26, #bddf26);
+
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar-left {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content-left {
+    background-color: blue;
+    padding: 30px 20px 130px 20px;
+    margin-left: 30%;
+}
+
+.content-left-text {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.title-left,
+.text-1,
+.text-2,
+.button {
+    flex: 1;
+    padding: 7px;
+    margin-bottom: 30;
+}
+
+.content-left-text p {
+    color: white;
+    font-size: 14px;
+}
+
+.content-left-text h1 {
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+.button button {
+    background-color: white;
+    padding: 18px;
+    text-align: center;
+    color: blue;
+    border: none;
+}
+
+.sidebar-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    margin-right: 30%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+
+}
+
+.title-right,
+.name,
+.email-content,
+.password {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 7px;
+    gap: 5px;
+}
+
+.title-right h1 {
+    color: blue;
+}
+
+.name input,
+.email-content input,
+.password input {
+    padding: 6px;
+}
+
+.name-content,
+.password-content {
+    display: flex;
+    gap: 15px;
+}
+
+.select-content {
+    display: flex;
+    padding: 3px;
+    gap: 20px;
+}
+
+.select-content p {
+    color: blue;
+}
+
+.select-content b {
+    color: black;
+}
+
+.submit-content button {
+    padding: 13px 18px 13px 18px;
+    border: none;
+    background-color: blue;
+    color: white;
+
+}

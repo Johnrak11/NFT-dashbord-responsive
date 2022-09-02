@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 122.5vh;
+    font-family: sans-serif;
+    display: flex;
+    background-color: rgb(215, 213, 213);
+}
+.container{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav"
+    "sidebar header header header header header header"
+    "sidebar content content content content content content";
+    grid-template-rows: 1fr 1.8fr 11fr;
+}
+nav{
+    background-color: rgb(21, 156, 209);
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-left span{
+    margin-left: 20px;
+
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+.nav-right img{
+    border-radius: 50px;
+    border: 2px solid orange;
+}
+.nav-right .expand{
+    margin-right: 20px;
+}
+nav .material-icons{
+    font-size: 25px;
+    color: white;
+}
+nav span{
+    color: white;
+}
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../image/wallpaper-2.jpg);
+}
+.header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-left p{
+    margin-left: 20px;
+    color: white;
+}
+.header-left span{
+    margin-left: 20px;
+    font-size: 12px;
+    color: white;
+}
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-right span{
+    margin-right: 20px;
+    color: white;
+    font-size: 13px;
+}
+.header-right .material-icons{
+    color: white;
+    font-size: 19px;
+}
+aside{
+    grid-area: sidebar;
+    display: grid;
+}
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    background-image: url(../image/wallpaper-2.jpg);
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2px;
+
+}
+.profile img{
+    border-radius: 50px;
+    margin-top: 7px;
+    border: 3px dashed orange;
+
+}
+.profile .name-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.profile .name-user span{
+    font-size: 15px;
+    margin-left: 10px;
+    color: white;
+}
+.profile .name-user i{
+    color: white;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(157, 149, 149, 0.754);
+    background-color: white;
+}
+.search input{
+    padding: 13px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.search i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.icon-content{
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid rgba(157, 149, 149, 0.754);
+    background-color: white;
+}
+.icon-content label{
+    color: rgb(21, 156, 209);
+    font-size: 14px;
+}
+.icon-content .home{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+    gap: 10px;
+}
+.icon-content .home span{
+    font-size: 13px;
+    color: rgb(83, 77, 77);
+}
+.icon-content .home i{
+    font-size: 20px;
+}
+#icon{
+    color: white;
+}
+.icon-content #navigation{
+    background-color:rgb(21, 156, 209);
+    padding: 5px;
+    color: white;
+}
+#navigation span{
+    color: white;
+    margin-bottom: 2px;
+}
+main{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+    "top top top top top top"
+    "center center center center center center"
+    "buttom buttom buttom buttom buttom buttom";
+    grid-template-rows: 0.7fr 2fr 0.6fr;
+}
+.content-top{
+    grid-area: top;
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px 13px 20px ;
+}
+.content-top .card-content{
+    display: flex;
+    flex: 1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+}
+#card-1{
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.412);
+}
+#card-2{
+    border-radius: 0 10px 10px 0;
+}
+.card-imformation{
+    display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.412);
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#card-imformation-2{
+    border-bottom: none;
+}
+.card-imformation i{
+    font-size: 25px;
+}
+.card-imformation .person, .card-imformation .email{
+    color: rgb(47, 148, 211);
+}
+.card-imformation .file{
+    color: rgb(214, 61, 47);
+}
+.card-imformation .volume{
+    color: rgb(20, 170, 20);
+}
+.card-imformation .imformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.card-imformation .imformation p{
+    font-size: 15px;
+}
+.card-imformation .imformation span{
+    font-size: 11px;
+}
+.archive-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.archive-top{
+    background-color:rgba(219, 150, 23, 0.803);
+    display: flex;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.archive-top i{
+    background-color:rgb(219, 150, 23);
+    border-radius: 10px 0 0 10px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.archive-top .text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding:10px;
+    margin-left: 20px;
+}
+.archive-top .text p{
+    font-size: 15px;
+    color: white;
+}
+.archive-top .text span{
+    font-size: 11px;
+    color: rgb(225, 225, 225)
+}
+#archive-buttom{
+    background-color: rgba(21, 156, 209, 0.719);
+}
+#archive-buttom-1{
+    background-color: rgb(21, 156, 209);
+}
+.content-center{
+    grid-area: center;
+    display: flex;
+    gap: 20px;
+}
+.main-content-center{
+    flex: 1;
+    display: flex;
+}
+.content-center-left .client-container{
+    background-color: white;
+    border-radius: 10px;
+    margin: 13px 5px 13px 20px ;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+.content-center-left .client-container .title{
+    display: flex;
+    flex: 1;
+    padding: 12px;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.412);
+}
+.content-center-left .client-container .title .title-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.client-container .title .title-left p{
+    font-size: 18px;
+}
+.content-center-left .client-container .title .title-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.title .title-right i{
+    color: rgb(96, 93, 93);
+    font-size: 15px;
+}
+.content-center-left .client-container .client-profile{
+    display: flex;
+    flex: 1;
+    padding: 13px;
+    border-bottom: 1px solid  rgba(128, 128, 128, 0.412);
+}
+#client-profile-bottom{
+    border-bottom: none;
+}
+.content-center-left .client-container .client-profile .client-profile-left{
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+.content-center-left .client-container .client-profile .client-profile-left img{
+    border-radius: 50px;
+}
+.content-center-left .client-container .client-profile .client-profile-left .client-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.client-profile-left .client-information h6{
+    font-size: 14px;
+    color: rgb(57, 53, 53);
+}
+.client-profile-left .client-information span{
+    font-size: 14px;
+}
+.content-center-left .client-container .client-profile .client-profile-right{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.client-profile .client-profile-right span{
+    font-size: 14px;
+}
+.client-profile .client-profile-right i{
+    color: rgb(20, 170, 20);
+}
+#client-profile-right-icon{
+    color: rgb(214, 61, 47);
+}
+.content-center-right{
+    display: flex;
+    flex-direction: column;
+    padding: 13px 20px 13px 5px ;
+    gap: 10px;
+}
+.content-center-right .detail-1{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+.content-center-right .detail-1 .detail-1-left, .detail-1-rigth{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    background-color: white;
+    border-radius: 10px;
+}
+.content-center-right .detail-1 .detail-1-left p, .detail-1-rigth p{
+    font-size: 15.5px;
+}
+.content-center-right .detail-1 .detail-1-left span, .detail-1-rigth span{
+    font-size: 13px;
+    color: rgb(65, 60, 60);
+}
+.number-sub{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.number-sub span{
+    font-weight: bold;
+    color: rgb(64, 58, 58);
+}
+#number{
+    font-size: 18px;
+}
+.content-center-right .detail-1 .detail-1-left .number-sub i{
+    color: rgb(214, 61, 47);
+    font-weight: bold;
+}
+.content-center-right .detail-1 .detail-1-rigth  i{
+    color: rgb(20, 170, 20);
+    font-weight: bold;
+}
+
+.content-center-right .detail-2{
+    display: flex;
+    flex: 0.7;
+    gap: 20px;
+}
+.content-center-right .detail-2 .detail-2-left, .detail-2 .detail-2-right{
+    background-color: rgb(214, 61, 47);
+    flex: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 25px;
+}
+.detail-2 span{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+.detail-2 p{
+    font-size: 13px;
+    color: white;
+}
+#detail-2-right-green{
+    background-color:rgb(20, 170, 20) ;
+}
+.content-buttom{
+    grid-area:buttom ;
+    padding: 13px 20px 13px 20px ;
+}
+.range-container{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+.range-container .range{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.range-container .range p{
+    font-size: 13px;
+}
+.range-container .range .range-number{
+    display: flex;
+    gap: 10px;
+}
+.range-container .range .range-number span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.range-container .range .range-number p{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(20, 170, 20) ;
+}
+#range-number-p{
+    color: rgb(214, 61, 47);
+}
+
+
